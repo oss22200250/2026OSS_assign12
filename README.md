@@ -18,8 +18,11 @@ npm run dev
 
 
 ## 이해도 확인 질문
-1. `setCount(prev => prev + 1)`은 왜 유용한가?
-2. `useEffect(fn, [])`과 `useEffect(fn)`은 어떻게 다른가?
-3. Cleanup은 언제 실행되는가? 개발 환경 StrictMode 영향은?
-4. `useState`와 `useRef`의 값 변경 시 렌더링 차이는?
-5. LAB 2와 LAB 4에서 Timer를 관리하는 방식의 차이는?
+1. useEffect의 Dependency Array가 필요한 이유는?  
+- useEffect 내부 코드 실행 타이밍을 제어하고, 불필요한 재실행 및 무한 루프를 방지하기 위해서 필요함.
+2. Cleanup을 사용하지 않으면 어떤 문제가 발생할 수 있는가?  
+- 타이머가 중복으로 실행되는 문제가 발생할 수 있음.
+3. useState와 useRef의 가장 중요한 차이는?  
+- 값을 변경할 때 컴포넌트가 화면을 갱신하는지 아닌지. useState는 화면에 즉시 반영, useRef는 리렌더링을 일으키지 않음.
+4. LAB 2와 LAB 4의 Timer 관리 방식은 어떻게 다른가?  
+- 타이머 관리가 다른데, lab2는 useEffect 기반으로 관리, lab4는 useRef 기반으로 관리함.

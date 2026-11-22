@@ -12,7 +12,7 @@ export default function Lab4RefTimer() {
     if(timerRef.current !==null) return;
     // TODO 3: setInterval의 반환 ID를 timerRef.current에 보관
     // TODO 4: 1초마다 count 증가, running을 true로 변경
-    timerRef.current = set(() => {
+    timerRef.current = setInterval(() => {
       setCount(prev=>prev+1);
     }, 1000);
     setRunning(true);
