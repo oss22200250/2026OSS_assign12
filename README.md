@@ -17,6 +17,20 @@ npm run dev
 4. 한 LAB에서 다른 LAB으로 탭을 전환하면 기존 컴포넌트가 언마운트됩니다. Cleanup 결과를 관찰합니다.
 
 
+
+
+# 1 Project Information
+React Hooks 활용한 타이머 제어 프로젝트
+
+# 2 Installation
+npm install / npm run dev로 설치 및 실행
+
+
+# 3 Source Code Exploration
+
+# 4 Lab Implementation
+
+# 5 Lab Comparison
 ## 이해도 확인 질문
 1. useEffect의 Dependency Array가 필요한 이유는?  
 - useEffect 내부 코드 실행 타이밍을 제어하고, 불필요한 재실행 및 무한 루프를 방지하기 위해서 필요함.
@@ -26,3 +40,10 @@ npm run dev
 - 값을 변경할 때 컴포넌트가 화면을 갱신하는지 아닌지. useState는 화면에 즉시 반영, useRef는 리렌더링을 일으키지 않음.
 4. LAB 2와 LAB 4의 Timer 관리 방식은 어떻게 다른가?  
 - 타이머 관리가 다른데, lab2는 useEffect 기반으로 관리, lab4는 useRef 기반으로 관리함.
+
+# 6 Customizing
+App.jsx, App.css 변경
+
+# 7 Deployment
+
+# 8 Weekly Review
